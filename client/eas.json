@@ -1,0 +1,32 @@
+{
+  "build": {
+    "local": {
+      "releaseChannel": "local",
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "local",
+        "REAL_DEVICE_LOCAl_IP": "192.168.8.228"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "releaseChannel": "staging",
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "staging"
+      }
+    },
+    "production": {
+      "releaseChannel": "production",
+      "env": {
+        "APP_ENV": "production"
+      }
+    }
+  },
+  "cli": {
+    "version": ">= 0.53.0",
+    "requireCommit": true
+  }
+}

@@ -1,0 +1,1 @@
+aws elasticbeanstalk update-environment --environment-name=Yenbekreststaging-env-1 --option-settings=file://env-staging.json;
